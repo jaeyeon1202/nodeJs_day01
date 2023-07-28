@@ -1,0 +1,22 @@
+<h3>단순 for으로 출력</h3>
+
+<% 
+    for(let i=0; i<rank.length; i++){ %>
+        <%= rank[i] %><br>
+   <% } %>
+
+<hr>
+
+
+<h3>이중 for문으로 출력</h3>
+<table border="1">
+<% 
+    for(let i=0; i<rank.length; i++){ %>
+    <tr>
+        <% for(let j=0; j<rank[i].length; j++){ %>
+            <td><%= rank[i][j] %> </td>
+        <% } %>
+    </tr>
+    <% }
+%>
+</table>
